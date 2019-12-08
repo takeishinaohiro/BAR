@@ -1,0 +1,262 @@
+.wrapper{
+  background-color: rgb(53, 49, 49);
+  padding-bottom: 60px;
+  padding-top: 30px;
+  height: auto;
+  font-family: "Didot LT W02 Roman", Didot, "Hoefler Text", Garamond, "Times New Roman", serif;
+
+  .image{
+    height: 700px;
+    width: 100vw;
+    background-image: url("/店内.jpg");
+    background-size: cover;
+    position: relative;
+    animation: Aa 2s forwards;
+
+
+    .show-serect1{
+      z-index: 1;
+      position: absolute;
+    
+    
+      .serect-btn1{
+        height: 80px;
+      
+        ul {
+          display: flex;
+          overflow: hidden;
+          width: 100vw;
+          margin: 0 auto;
+    
+    
+      li {
+        float: left;
+        width: 33.3333%;
+        list-style-type: none;
+      }
+      
+          a {
+            display: block;
+            padding: 20px 0;
+            text-align: center;
+            text-decoration: none;
+            background-color: rgb(53, 49, 49);
+            opacity: 0.6;
+            color: white;
+            font-weight: 200;
+            border: 1px solid white;
+            font-size: 20px;
+            
+            &:hover {
+              background-color: rgb(53, 49, 49);
+              opacity: 0.8;
+              font-weight: 500;
+              color: pink;
+
+            }
+          }
+        }
+      }
+    }
+    &__name{
+      list-style: none;
+      text-align: center;
+      line-height: 700px;
+      font-size: 70px;
+      animation: Aa 4s forwards;
+    }
+  }
+}
+
+.aa{
+  height: 0;
+  background-color: rgb(53, 49, 49);
+}
+
+
+.wrapper2{
+  background-image: url("/bgi.jpeg");
+  font-family: "Didot LT W02 Roman", Didot, "Hoefler Text", Garamond, "Times New Roman", serif;
+  position: relative;
+  z-index: 98;
+  // .wrapper-g {
+  //   background-color: rgb(53, 49, 49);
+  //   opacity: 0.9;
+  //   width:100%;
+  //   height: auto;
+  //   position: absolute;
+  //   top:0;
+  //   left:0;
+  //   z-index: 99;
+  // }
+  &__into{
+    
+
+    .name{
+      margin: 0 auto;
+      padding: 30px 40px 0 40px;
+      width: 60%;
+      opacity: 1;
+      background-color: rgba(255, 255, 255, 0.788);
+      z-index: 100;
+
+
+      &__into{
+        width: 40%;
+        border-bottom: 2px solid rgb(224, 219, 219);
+        margin: 0 auto;
+        line-height: 50px;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 800;
+        list-style: none;
+        padding-bottom: 30px;
+      }
+    }
+    .menu{
+      width: 60%;
+      margin: 0 auto;
+      padding: 0 40px 30px 40px;
+      background-color:rgba(255, 255, 255, 0.788);
+      z-index: 100;
+
+
+      &__first{
+        margin: 0 auto;
+
+          &--1{
+            display: flex;
+            font-size: 25px;
+            color: #414040;
+            margin-left: 30%;
+            width: 40%;
+            padding: 20px;
+          }
+        }
+          &__second{
+            display: flex;
+            font-size: 35px;
+            color: #414040;
+            padding: 30px;
+            word-wrap:break-all;
+            overflow: visible;
+
+
+            .slide{
+              margin-top: 20px;
+              z-index: 1;
+              opacity: 1;
+              background-image: url("/飲み物1.jpg");
+              height: 350px;
+              width: 263px;
+              background-size: cover;
+
+            }
+            .r{
+              font-weight: 200;
+              width: 55%;
+              list-style: none;
+              margin: 40px 0 0 10%;
+              font-size: 20px;
+              line-height: 1.5;
+              color: #646262;
+
+            }
+          }
+          &--3{
+            margin-top: 40px;
+            text-decoration: none;
+            color: royalblue;
+            border-bottom: 1px solid rgb(224, 219, 219);
+            padding-bottom: 40px;
+
+
+
+            .time-btn{
+              text-decoration: none;
+              color: royalblue;
+              font-weight: 900;
+              font-size: 30px;
+              margin-bottom: 40px;
+              margin-left: 25%;
+
+
+
+
+              &:hover{
+                opacity: 0.5;
+                border-bottom: 1px solid royalblue;
+              }
+          }
+        }
+    }
+  }
+}
+@keyframes Aa{
+  0%{
+    opacity: 0;
+    color: black;
+  }
+  5%{
+    opacity: 0.0;
+  }
+  10%{
+    opacity: 0.05;
+  }
+  15%{
+    opacity: 0.1;
+  }
+  20%{
+    opacity: 0.1.5;
+  }
+  25%{
+    opacity: 0.2;
+  }
+  30%{
+    opacity: 0.2.5;
+  }
+  35%{
+    opacity: 0.3;
+  }
+  40%{
+    opacity: 0.4;
+  }
+  45%{
+    opacity: 0.45;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  55%{
+    opacity: 0.55;
+  }
+  60%{
+    opacity: 0.6;
+  }
+  65%{
+    opacity: 0.65;
+  }
+  70%{
+    opacity: 0.7;
+  }
+  75%{
+    opacity: 0.75;
+  }
+  80%{
+    opacity: 0.8;
+  }
+  85%{
+    opacity: 0.85;
+  }
+  90%{
+    opacity: 0.9;
+  }
+  95%{
+    opacity: 0.95;
+    color: black;
+  }
+  100%{
+    opacity: 1;
+    color: white;
+  }
+}
