@@ -75,29 +75,17 @@
 
 
 .wrapper2{
-  background-image: url("/bgi.jpeg");
+  background-image: url("/big.png");
   font-family: "Didot LT W02 Roman", Didot, "Hoefler Text", Garamond, "Times New Roman", serif;
   position: relative;
   z-index: 98;
-  // .wrapper-g {
-  //   background-color: rgb(53, 49, 49);
-  //   opacity: 0.9;
-  //   width:100%;
-  //   height: auto;
-  //   position: absolute;
-  //   top:0;
-  //   left:0;
-  //   z-index: 99;
-  // }
-  &__into{
     
-
     .name{
       margin: 0 auto;
       padding: 30px 40px 0 40px;
       width: 60%;
       opacity: 1;
-      background-color: rgba(255, 255, 255, 0.788);
+      background-color: rgba(255, 255, 255, 0.685);
       z-index: 100;
 
 
@@ -117,7 +105,7 @@
       width: 60%;
       margin: 0 auto;
       padding: 0 40px 30px 40px;
-      background-color:rgba(255, 255, 255, 0.788);
+      background-color: rgba(255, 255, 255, 0.685);
       z-index: 100;
 
 
@@ -135,26 +123,29 @@
         }
           &__second{
             display: flex;
+            justify-content: space-between;
             font-size: 35px;
             color: #414040;
-            padding: 30px;
             word-wrap:break-all;
             overflow: visible;
+            margin: 0 auto;
+            width: 90%;
 
 
             .slide{
               margin-top: 20px;
               z-index: 1;
               opacity: 1;
-              background-image: url("/飲み物1.jpg");
-              height: 350px;
-              width: 263px;
+              background-image: url("/drink.png");
+              height: 300px;
+              display: block;
+              width: 450px;
               background-size: cover;
+
 
             }
             .r{
               font-weight: 200;
-              width: 55%;
               list-style: none;
               margin: 40px 0 0 10%;
               font-size: 20px;
@@ -190,7 +181,6 @@
           }
         }
     }
-  }
 }
 @keyframes Aa{
   0%{

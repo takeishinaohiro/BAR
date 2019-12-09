@@ -13,24 +13,43 @@
       %li BAR KOMAZAWA
 .aa
 .wrapper2
-  .wrapper-g
-  .wrapper2__into
-    .name
-      .name__into
-        %li BAR
-        %li KOMAZAWA
-    .menu
-      .menu__first
-        .menu__first--1
-          ①簡単説明aaaaaaaaaaaaaaaaaaaaaaaaaaaa
-      .menu__second
-        .slide
-        .r
-          ②説明aaaaaaaaaaaaaaaaaa
-          %li aaaaaaaaaaaaaaaaaaaaaaaa
-          %li aaaaaaaaaaaaaaaaaaaaaaaa
-          %li aaaaaaaaaaaaaaaaaaaaaaaa
-          %li aaaaaaaaaaaaaaaaaaaaaaaa
-      .menu__into--3
-        =link_to "",class: "time-btn" do
-          今日の確認
+  .name
+    .name__into
+      %li BAR
+      %li KOMAZAWA
+  .menu
+    .menu__first
+      .menu__first--1
+        ①簡単説明aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    .menu__second
+      .slide
+      .r
+        ②説明aaaaaaaaaaaaaaaaaa
+        %li aaaaaaaaaaaaaaaaaaaaaaaa
+        %li aaaaaaaaaaaaaaaaaaaaaaaa
+        %li aaaaaaaaaaaaaaaaaaaaaaaa
+        %li aaaaaaaaaaaaaaaaaaaaaaaa
+    .menu__into--third
+      .today
+        .today__left
+          = fa_icon'clock'
+          %i.far.fa-clock
+          now
+        .today__right
+          open(閉店時間　不定期)
+          close(開店時間　不定期)
+      .place
+        .place__left
+          = fa_icon 'map-marker-alt'
+          place
+        .plice__right
+          〒154-0012 東京都世田谷区駒沢５丁目１７−１３
+      .tel
+        .tel__left
+          = fa_icon 'phone-alt'
+          tell
+        .tel__right
+          %a{href: "tel:08044527045",class:"tel2"} 050-9999-8888
+      .link
+        =link_to "",class:"link-to" do
+          = fa_icon 'facebook-square'
