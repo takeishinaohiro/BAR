@@ -2,7 +2,6 @@
   background-color: #333;
   padding-bottom: 60px;
   padding-top: 30px;
-  height: auto;
   font-family: "Didot LT W02 Roman", Didot, "Hoefler Text", Garamond, "Times New Roman", serif;
 
   .image{
@@ -300,6 +299,8 @@
 
                   &__left{
                     font-weight: 700;
+                    font-weight: 700;
+
                   }
                   .plice__right{
                     font-weight: 100;
@@ -313,6 +314,9 @@
                   padding-top: 40px;
                   border-bottom: 1px solid rgb(49, 49, 49);
                   font-weight: 700;
+                  &__left{
+                    font-weight: 700;
+                  }
 
                   &__right{
                     color: #333;
@@ -376,7 +380,6 @@
           .news-content{
             margin: 50px auto 50px;
             width: 43.8%;
-            background-color: rgb(28, 70, 184);
             height: 400px;
           }
         }
@@ -391,19 +394,20 @@
 }
 .footer{
   width: 100%;
-  height: 200px;
+  height: 350px;
   background-color: #333;
-  border-top: 10px solid rgb(63, 2, 58);
+  border-top: 4px solid rgb(70, 31, 16);
   font-family: "Didot LT W02 Roman", Didot, "Hoefler Text", Garamond, "Times New Roman", serif;
   font-style: italic;
+  color: rgb(189, 184, 184);
 
 
 
   &__top{
     text-align: center;
     line-height: 50px;
-    font-size: 20px;
-    margin: 40px 0 ;
+    font-size: 28px;
+    margin-top: 30px;
     color: #fff;
 
     .fa-facebook-square{
@@ -417,6 +421,40 @@
       border-radius: 10px;
     }
   }
+  &__center{
+    width: 70%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    line-height: 40px;
+
+    &__right{
+
+      .opentime{
+        cursor: pointer;
+
+        &:hover{
+          opacity: 0.4;
+        }
+      }
+
+      .tell3{
+        color: rgb(189, 184, 184);
+        text-decoration: none;
+
+        &:hover{
+          opacity: 0.4;
+        }
+      }
+    }
+  }
+  &__bottom{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 45px;
+  }
+  
 }
 @keyframes Aa{
   0%{
@@ -430,4 +468,13 @@
 }
 .none{
   display: none;
+}
+
+@media screen and (max-width: 480px){
+  .wrapper{
+    .image{
+      height: 60vh;
+
+    }
+  }
 }

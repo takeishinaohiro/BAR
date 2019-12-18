@@ -59,4 +59,7 @@ $(function() {
   $(".cc").click(function(){
     scrollToSche()
   });
+  $(".opentime").click(function(){
+    scrollToAbout()
+  });
   }); 
