@@ -3,7 +3,7 @@ class BarsController < ApplicationController
   def index
     @bars = Bar.find_by(1)
     if @bars == nil
-      @bars.create(id:1, open:1)
+      @bars.create(open:1)
     end  
   end
   def create
