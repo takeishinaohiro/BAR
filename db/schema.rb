@@ -13,7 +13,7 @@
 ActiveRecord::Schema.define(version: 2019_12_17_115405) do
 
   create_table "bars", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "open"
+    t.integer "opentime"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

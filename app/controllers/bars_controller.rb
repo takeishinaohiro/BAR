@@ -1,8 +1,8 @@
 class BarsController < ApplicationController
   basic_private_methods = private_methods(false)
   def index
-    @bars = Bar.find_by(id:1)
-    if @bars == nil
+    @bar = Bar.find_by(id:1)
+    if @bar == nil
       Bar.create(open:1)
     end  
   end
