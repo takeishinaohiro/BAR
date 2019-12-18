@@ -3,7 +3,7 @@ class BarsController < ApplicationController
   def index
     @bar = Bar.find_by(id:1)
     if @bar == nil
-      Bar.create(open:1)
+      Bar.create(opentime:1)
     end  
   end
   def create
@@ -12,10 +12,7 @@ class BarsController < ApplicationController
   end
 
     def bar_params
-      params.require(:bars).permit(:open)
+      params.require(:bars).permit(:opentime)
     end
 
-    def bar_params1
-      params.require(:bars).permit(:open)
-    end
 end
