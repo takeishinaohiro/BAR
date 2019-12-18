@@ -12,17 +12,51 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require turbolinks
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
 
-
-$(function(){
-
-  $('.slide').slick({
-    dots: true,
-    autoplay: true,
-    autoplaySpeed:6000
-  })
+$(function() {
+  // 詳細ページのslick上
+  $('.slide-top').slick({
+    // rtl: true
+  });
 })
+
+$(function() {
+  $('.open-btn').click(function(){
+    console.log("apa");
+    $('.close').addClass('none')
+    $('.open').removeClass('none')
+  })
+  $('.close-btn').click(function(){
+    console.log("apa");
+    $('.open').addClass('none')
+    $('.close').removeClass('none')
+  })
+  });
+
+  $(function() {
+    function scrollToTop() {
+      $("html,body").animate({scrollTop:$('.name__into').offset().top});
+     }
+     function scrollToAbout() {
+      $("html,body").animate({scrollTop:$('.top').offset().top});
+     }
+     function scrollToSche() {
+      $("html,body").animate({scrollTop:$('.news').offset().top});
+     }
+
+
+
+  $(".aa").click(function(){
+    scrollToTop()
+  });
+  $(".bb").click(function(){
+    scrollToAbout()
+  });
+
+  $(".cc").click(function(){
+    scrollToSche()
+  });
+  }); 

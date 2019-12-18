@@ -64,11 +64,9 @@ gem 'devise'
 gem 'pry-rails'
 gem 'html'
 gem 'jquery-rails'
-gem "font-awesome-rails"
 gem 'font-awesome-sass'
 gem "haml-rails", ">= 1.0", '<= 2.0.1'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'carrierwave'
 gem 'mini_magick'
-gem "font-awesome-sass"
