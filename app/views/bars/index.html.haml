@@ -7,10 +7,9 @@
             bar-komazawa
           .bb
             information
-          .cc
-            time & news
     .image__name
-      %li BAR　KOMAZAWA
+      %li.xx BAR　KOMAZAWA
+      %li since　2000
 .aa
 .wrapper2
   .name
@@ -20,15 +19,16 @@
   .menu
     .menu__first
       .menu__first--1
-        ①簡単説明aaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        ①簡単説明aaaaaaaaaaaa
+        aaaaaaaaaaaaaaaa
     .menu__second
       .l
         .slide-top
-          = image_tag '/ドア.jpg', height: '300', width: '450',class:"imagemain-b"
-          = image_tag '/壁.png', height: '300', width: '450',class:"imagemain-e"
-          = image_tag '/drink.png', height: '300', width: '450', class:"imagemain-a"
-          = image_tag '/drink2.png', height: '300', width: '450',class:"imagemain-d"
-          = image_tag '/logo.png', height: '300', width: '450',class:"imagemain-c"
+          = image_tag '/ドア.jpg',class:"imagemain-b"
+          = image_tag '/壁.png',class:"imagemain-e"
+          = image_tag '/drink.png',class:"imagemain-a"
+          = image_tag '/drink2.png',class:"imagemain-d"
+          = image_tag '/logo.png',class:"imagemain-c"
       .r
         ②説明aaaaaaaaaaaaaaaaaa
         %li aaaaaaaaaaaaaaaaaaaaaaaa
@@ -43,28 +43,28 @@
           .now
             - if @bar.opentime == 1
               .open
-                只今　open
+                只今:　open
             - else
               .close
-                只今　close
+                只今:　close
           .day
             .day__left
-              定休日
+              定休日:
             .plice__right
               水曜日
           .time
             .time__left
-              開店時間
+              開店時間:
             .time__right
               21時〜27時
           .place
             .place__left
-              場所
+              場所:
             .plice__right
               東京都世田谷区駒沢５丁目１７−１３
           .tell
             .tell__left
-              電話
+              電話:
             .tell__right
               %a{href: "tel:08044527045",class:"tell2"} 03-3705-0781 
         .information__right
@@ -76,11 +76,7 @@
               %input{name:"bars[open]",type: "hidden",value:2}
               = f.submit "close" , class: "close-btn"
       .bottom
-        %iframe{allowfullscreen: "", frameborder: "0", height: "300", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.7900680724526!2d139.65491468658405!3d35.62377520063195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f48b5927bd91%3A0xe631c43ed3cd5e37!2sBar%20KOMAZAWA!5e0!3m2!1sja!2sjp!4v1576297597633!5m2!1sja!2sjp", style: "border-radius:30;", width: "622"}
-      .news
-        time&news
-      .news-content
-        %iframe{allow: "encrypted-media", allowtransparency: "true", frameborder: "0", height: "400", scrolling: "no", src: "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FfacebookappJapan%2F%3Fbrand_redir%3D20531316728&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId", style: "border:none;overflow:hidden", width: "660"}
+        %iframe{allowfullscreen: "",class:"bottom__content", frameborder: "0", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.7900680724526!2d139.65491468658405!3d35.62377520063195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f48b5927bd91%3A0xe631c43ed3cd5e37!2sBar%20KOMAZAWA!5e0!3m2!1sja!2sjp!4v1576297597633!5m2!1sja!2sjp", style: "border-radius:30;"}
 .footer
   .footer__top
     facefook
@@ -97,6 +93,5 @@
         開店時間の確認
       .jus
         %a{href: "tel:08044527045",class:"tell3"} お問合わせ
-      
   .footer__bottom
-    2019 © バー駒沢 グループ個人情報保護方針サイトマップご利用規約広告とCookieに関する方針
+    2019 © バー駒沢 グループ個人情報保護方針サイトマップ
