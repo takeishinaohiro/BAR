@@ -667,6 +667,14 @@
     .footer__top{
       font-size: 20px;
       margin: 0;
+
+      .footer__top--content{
+
+        .fa-facebook-square{
+        background-color: #fff;
+        height: 40px;
+        }
+      }
     }
     .footer__center{
       width: 94%;
