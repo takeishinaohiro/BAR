@@ -192,3 +192,31 @@ $slick-opacity-not-active: 0.25 !default;
         }
     }
 }
+@media screen and (max-width: 500px){
+    .slick-prev {
+        left: 23%;
+        [dir="rtl"] & {
+            left: auto;
+        }
+        &:before {
+            content: $slick-prev-character;
+            [dir="rtl"] & {
+                content: $slick-next-character;
+            }
+        }
+    }
+    
+    .slick-next {
+        right: 23%;
+        [dir="rtl"] & {
+            right: auto;
+        }
+        &:before {
+            content: $slick-next-character;
+            [dir="rtl"] & {
+                content: $slick-prev-character;
+            }
+        }
+    }
+
+}
