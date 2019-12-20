@@ -2,7 +2,7 @@
   background-color: #333;
   padding-bottom: 60px;
   padding-top: 30px;
-  font-family: "Didot LT W02 Roman", Didot, "Hoefler Text", Garamond, "Times New Roman", serif;
+  // font-family: "Didot LT W02 Roman", Didot, "Hoefler Text", Garamond, "Times New Roman", serif;
 
   .image{
     height: 700px;
@@ -534,7 +534,9 @@
   .image__name li {
     text-shadow: 2px 2px 1px #333;
     letter-spacing: 8px;
-    font-style: italic;
+    font-style: normal;
+    font-family: "Didot LT W02 Roman", Didot, "Hoefler Text", Garamond, "Times New Roman", serif;
+
   }
   .aa{
     height: 20px;
