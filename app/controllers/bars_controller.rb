@@ -14,5 +14,4 @@ class BarsController < ApplicationController
     def bar_params
       params.require(:bars).permit(:opentime)
     end
-
 end
