@@ -70,10 +70,10 @@
         .information__right
           -if user_signed_in?
             = form_with url:"/bars",method: :post, local: true do |f|
-              %input{name:"bars[open]",type: "hidden",value:1}
+              %input{name:"bars[opentime]",type: "hidden",value:1}
               = f.submit "open" , class: "open-btn"
             = form_with url:"/bars",method: :post, local: true do |f|
-              %input{name:"bars[open]",type: "hidden",value:2}
+              %input{name:"bars[opentime]",type: "hidden",value:2}
               = f.submit "close" , class: "close-btn"
       .bottom
         %iframe{allowfullscreen: "",class:"bottom__content", frameborder: "0", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.7900680724526!2d139.65491468658405!3d35.62377520063195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f48b5927bd91%3A0xe631c43ed3cd5e37!2sBar%20KOMAZAWA!5e0!3m2!1sja!2sjp!4v1576297597633!5m2!1sja!2sjp", style: "border-radius:30;"}
