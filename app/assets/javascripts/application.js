@@ -15,19 +15,3 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
-
-$(function() {
-  $(".aa").click(function(){
-    scrollToTop()
-  });
-  $(".bb").click(function(){
-    scrollToAbout()
-  });
-
-  $(".cc").click(function(){
-    scrollToSche()
-  });
-  $(".opentime").click(function(){
-    scrollToAbout()
-  });
-  }); 
