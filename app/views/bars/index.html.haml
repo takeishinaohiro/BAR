@@ -1,88 +1,50 @@
 .wrapper
   .image
-    .show-serect1
-      .serect-btn1
-        %ul
-          .aa
-            bar-komazawa
-          .bb
-            information
     .image__name
-      %li.xx BAR　KOMAZAWA
-      %li since　2000
-.aa
-.wrapper2
-  .name
-    .name__into
-      %li BAR
+      %li.xx BAR
       %li KOMAZAWA
+      %li.last since　2000
+.wrapper2
   .menu
-    .menu__first
-      .menu__first--1
-        ①簡単説明aaaaaaaaaaaa
-        aaaaaaaaaaaaaaaa
-    .menu__second
-      .l
-        .slide-top
-          = image_tag '/ドア.jpg',class:"imagemain-b"
-          = image_tag '/壁.png',class:"imagemain-e"
-          = image_tag '/drink.png',class:"imagemain-a"
-          = image_tag '/drink2.png',class:"imagemain-d"
-          = image_tag '/logo.png',class:"imagemain-c"
-      .r
-        ②説明aaaaaaaaaaaaaaaaaa
-        %li aaaaaaaaaaaaaaaaaaaaaaaa
-        %li aaaaaaaaaaaaaaaaaaaaaaaa
-        %li aaaaaaaaaaaaaaaaaaaaaaaa
-        %li aaaaaaaaaaaaaaaaaaaaaaaa
+    .pp
+    .top-image
+    .top-text
+      %li 創業2000年以来、駒沢の閑静な
+      %li 　住宅街に佇む隠れ家的バー
+    .top-drink
+      .left
+      .right
+    .top-bottom
+      more cocktail & whiskey
     .menu__thrid
       .top
         information
       .information
         .information__left
-          .now
-            - if @bar.opentime == 1
-              .open
-                只今:　open
-            - else
-              .close
-                只今:　close
           .day
             .day__left
-              定休日:
+              closed:
             .plice__right
               水曜日
           .time
             .time__left
-              開店時間:
+              %li open 
+              %li close:
             .time__right
-              21時〜27時
+              %li 21時〜27時
           .place
             .place__left
-              場所:
+              address:
             .plice__right
               東京都世田谷区駒沢５丁目１７−１３
           .tell
             .tell__left
-              電話:
+              tel:
             .tell__right
               %a{href: "tel:08044527045",class:"tell2"} 03-3705-0781 
-        .information__right
-          -if user_signed_in?
-            = form_with url:"/bars",method: :post, local: true do |f|
-              %input{name:"bars[opentime]",type: "hidden",value:1}
-              = f.submit "open" , class: "open-btn"
-            = form_with url:"/bars",method: :post, local: true do |f|
-              %input{name:"bars[opentime]",type: "hidden",value:2}
-              = f.submit "close" , class: "close-btn"
       .bottom
         %iframe{allowfullscreen: "",class:"bottom__content", frameborder: "0", src: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d810.7900680724526!2d139.65491468658405!3d35.62377520063195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018f48b5927bd91%3A0xe631c43ed3cd5e37!2sBar%20KOMAZAWA!5e0!3m2!1sja!2sjp!4v1576297597633!5m2!1sja!2sjp", style: "border-radius:30;"}
 .footer
-  .footer__top
-    facefook
-    .footer__top--content
-      =link_to"https://www.facebook.com/pages/%E9%A7%92%E6%B2%A2/104237663243551?eid=ARBJzM-RdJFl7bqbbZ9ahPwLOBBV8ltLP7MQt57xuEhAWabhDcQE1HCroXdSV-El7NfTDKJQhwSt3u1C&timeline_context_item_type=intro_card_work&timeline_context_item_source=100002628408316&rf=177527305627887",class:"" do
-        %i.fab.fa-facebook-square
   .footer__center
     .footer__center__left
       =link_to new_user_session_path,class:"xiix" do
