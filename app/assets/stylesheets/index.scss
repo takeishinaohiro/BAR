@@ -14,9 +14,14 @@
     &__name{
       list-style: none;
       text-align: center;
-      font-size: 20px;
+      font-size: 40px;
       animation: Aa 4s forwards;
-      line-height: 50px;
+      line-height: 100px;
+      padding-top: 250px;
+
+      .last{
+        font-size: 20px;
+      }
     }
   }
 }
@@ -287,10 +292,10 @@
 }
 
 .image__name li {
-  text-shadow: 5px 5px 1px #333;
+  text-shadow: 3px 3px 1px #333;
   letter-spacing: 15px;
   font-style: italic;
-  
+
 }
 .footer{
   width: 100%;
