@@ -396,7 +396,7 @@
       .image__name{
         text-align: center;
         animation: Aa 4s forwards;
-        padding-top: 16%;
+        margin: 0;
         background-size: cover;
         position: absolute;
         z-index: 100;
@@ -405,7 +405,7 @@
         .last{
           width: 250px;
           height: 125px;
-          margin: 22% auto;
+          margin: 22% auto 0;
         }
       }
 
