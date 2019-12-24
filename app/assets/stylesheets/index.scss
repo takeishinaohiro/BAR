@@ -8,9 +8,7 @@
     width: 100vw;
     background-image: url("/top.png");
     background-size: cover;
-    position: relative;
     animation: Aa 2s forwards;
-    position: relative;
 
     &__name{
       list-style: none;
@@ -18,12 +16,11 @@
       animation: Aa 4s forwards;
       padding-top: 19%;
       background-size: cover;
-      position: absolute;
       z-index: 100;
       width: 100%;
+
       .last{
         width: 700px;
-        height: 350px;
         margin: 10% auto;
       }
     }
@@ -34,7 +31,6 @@
 .wrapper2{
   background-image: url("/big.png");
   font-family: "Didot LT W02 Roman", Didot, "Hoefler Text", Garamond, "Times New Roman", serif;
-  position: relative;
   z-index: 98;
   
     .menu{
