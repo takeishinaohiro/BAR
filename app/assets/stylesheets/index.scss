@@ -10,17 +10,21 @@
     background-size: cover;
     position: relative;
     animation: Aa 2s forwards;
+    position: relative;
 
     &__name{
       list-style: none;
       text-align: center;
-      font-size: 40px;
       animation: Aa 4s forwards;
-      line-height: 100px;
-      padding-top: 250px;
-
+      padding-top: 100px;
+      background-size: cover;
+      position: absolute;
+      z-index: 100;
+      width: 100%;
       .last{
-        font-size: 20px;
+        width: 700px;
+        height: 350px;
+        margin: 200px auto;
       }
     }
   }
@@ -390,18 +394,19 @@
       height: 40vh;
 
       .image__name{
-        font-size: 20px;
-        line-height: 30px;
-        padding-top: 120px;
-        padding-left: 20px;
+        text-align: center;
+        animation: Aa 4s forwards;
+        padding-top: 50px;
+        background-size: cover;
+        position: absolute;
+        z-index: 100;
+        width: 100%;
 
-        .xx{
-          font-size: 18px;
-        }
         .last{
-          font-size: 12px;
+          width: 250px;
+          height: 125px;
+          margin: 100px auto;
         }
-        
       }
 
     }
