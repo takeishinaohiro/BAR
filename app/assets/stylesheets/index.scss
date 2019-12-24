@@ -402,6 +402,7 @@
           width: 250px;
           height: 125px;
           margin: 16% auto 0;
+          position: static;
         }
       }
 
@@ -422,9 +423,9 @@
 
       .top-image{
         width: 90%;
-        height: 150px;
+        height: 160px;
         background-size: cover;
-        background-position: 0 -100px;
+        background-position: 0 -38px;
         margin: 10px auto;
       }
       .top-text{
